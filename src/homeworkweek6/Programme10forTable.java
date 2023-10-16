@@ -9,7 +9,7 @@ public class Programme10forTable {
 
     //print statement for table
     public static void printTable(int num, int i) {
-        System.out.println(num + "*" + i + "=" + num * i);
+        System.out.println(num + " * " + i + " = " + num * i);
     }
 
     // logic for creating table method

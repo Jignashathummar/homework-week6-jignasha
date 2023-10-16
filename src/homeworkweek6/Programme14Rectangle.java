@@ -1,24 +1,29 @@
 package homeworkweek6;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
  * A Java program to print the area and perimeter of a rectangle.
  */
 
+
 public class Programme14Rectangle {
+
+    private static DecimalFormat decfor = new DecimalFormat("0.00");//constructor of the DecimalFormat class
 
     //static method for rectangle area
     //concatenation for String
     public static void rectangleArea(double width, double height) {
-        System.out.println("Area is " + width + " * " + height + " = " + (width * height));
+        double area = width * height;
+        System.out.println("Area is " + width + " * " + height + " = " + decfor.format(area));
     }
 
     //static method for rectangle perimeter
     //concatenation for String
     public static void perimeter(double width, double height) {
-
-        System.out.println("Perimeter is 2 * (" + width + " + " + height + ") = " + 2 * (width + height));
+        double pm = 2 * (width + height);
+        System.out.println("Perimeter is 2 * (" + width + " + " + height + ") = " + decfor.format(pm));
     }
 
     //Scanner used in main method
